@@ -1,0 +1,6 @@
+C:\Users\Alex\source\repos\projetos\src\meii.infrastructure\bin\Debug\netcoreapp2.2\meii.infrastructure.deps.json
+C:\Users\Alex\source\repos\projetos\src\meii.infrastructure\bin\Debug\netcoreapp2.2\meii.infrastructure.dll
+C:\Users\Alex\source\repos\projetos\src\meii.infrastructure\obj\Debug\netcoreapp2.2\meii.infrastructure.csprojAssemblyReference.cache
+C:\Users\Alex\source\repos\projetos\src\meii.infrastructure\obj\Debug\netcoreapp2.2\meii.infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\projetos\src\meii.infrastructure\obj\Debug\netcoreapp2.2\meii.infrastructure.AssemblyInfoInputs.cache
+C:\Users\Alex\source\repos\projetos\src\meii.infrastructure\obj\Debug\netcoreapp2.2\meii.infrastructure.AssemblyInfo.cs

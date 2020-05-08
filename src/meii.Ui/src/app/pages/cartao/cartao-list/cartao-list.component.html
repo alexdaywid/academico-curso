@@ -1,0 +1,48 @@
+
+
+
+<div class="needs-validation card p-1 mt-1" novalidate="">
+    <div class="row justify-content-md-center">
+        <div class="col-md-12 mb-3">
+          <app-breadcrumb></app-breadcrumb>
+          <app-btn-create [details]="btnDetailsList"></app-btn-create> 
+         
+          <div class="table-responsive mt-5">
+            <table datatable class="table table-striped table-bordered table-responsive-sm" style="width:100%">
+              <thead>
+                <tr>
+                  <th>Titular</th>
+                  <th>Nº Cartao</th>
+                  <th>Data Vencimento</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let cartao of cartoes">
+                  <td>{{cartao.titular }}</td>
+                  <td>{{cartao.numero}}</td>
+                  <td>{{cartao.dataVencimento}}</td>
+                  <td>
+                   
+                    <div class="btn-group mr-2 mb-2">
+                      <!-- <a routerLink="edit/{{cartao.id}}"> -->
+                        <button class="btn btn-sm btn-outline-dark" data-toggle="tooltip" data-placement="top"  title="Editar" (Click)="editarCartao()">
+                          <i class="fas fa-edit fa-1x mr-1"></i>
+                        </button>
+                      <!-- </a> -->
+                   
+                    <button class="btn btn-sm btn-outline-dark"  data-toggle="tooltip" data-placement="top" (click)="excluirCartao(cartao)" title="Excluir">
+                    <i class="fas fa-trash fa-1x mr-1"></i></button>
+                    </div>
+                    <!-- <button class="btn btn-outline-dark btn-sm mr-1" routerLink="/cliente/edit" ><i class="fas fa-edit fa-1x mr-1"></i>Edite</button>
+                    <button class="btn btn-outline-info btn-sm" routerLink="/cliente/edit"><i class="fas fa-trash fa-1x mr-1"></i>Delete</button> -->
+                  </td>
+                </tr>     
+              </tbody>
+            </table>
+            
+        </div>
+        </div>
+    </div>
+  </div>
+  

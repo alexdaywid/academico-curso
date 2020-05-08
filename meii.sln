@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1- Ui", "1- Ui", "{4D3453DA-3B35-4B46-AFB8-22437AB0AC96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2- Api", "2- Api", "{C21FE5B3-6616-49B5-8365-DF53ACAF9F9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3- Business", "3- Business", "{CE65B7FB-2B34-4C78-ADEF-81381B811E97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4- Infrastructure", "4- Infrastructure", "{3FAAB7D2-035E-44B4-A366-05527AB28FE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "meii.infrastructure", "src\meii.infrastructure\meii.infrastructure.csproj", "{9B4B124A-3F55-4B88-9CF2-88DA016D32E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "meii.Api", "src\meii.Api\meii.Api.csproj", "{26F67156-C618-47A6-892D-08930FEFA4CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "meii.Business", "src\meii.Business\meii.Business.csproj", "{D62059D2-76C9-4DE7-BC09-F276979A820F}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "meii.Ui", "..\projetos\src\meii.Ui\", "{05BC4940-0224-4E69-8AA8-F1FA6C3D3965}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62854"
+		Debug.AspNetCompiler.PhysicalPath = "..\projetos\src\meii.Ui\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62854\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62854"
+		Release.AspNetCompiler.PhysicalPath = "..\projetos\src\meii.Ui\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62854\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62854"
+		SlnRelativePath = "..\projetos\src\meii.Ui\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B4B124A-3F55-4B88-9CF2-88DA016D32E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B4B124A-3F55-4B88-9CF2-88DA016D32E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B4B124A-3F55-4B88-9CF2-88DA016D32E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B4B124A-3F55-4B88-9CF2-88DA016D32E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F67156-C618-47A6-892D-08930FEFA4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F67156-C618-47A6-892D-08930FEFA4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F67156-C618-47A6-892D-08930FEFA4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F67156-C618-47A6-892D-08930FEFA4CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62059D2-76C9-4DE7-BC09-F276979A820F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62059D2-76C9-4DE7-BC09-F276979A820F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62059D2-76C9-4DE7-BC09-F276979A820F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62059D2-76C9-4DE7-BC09-F276979A820F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05BC4940-0224-4E69-8AA8-F1FA6C3D3965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05BC4940-0224-4E69-8AA8-F1FA6C3D3965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05BC4940-0224-4E69-8AA8-F1FA6C3D3965}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{05BC4940-0224-4E69-8AA8-F1FA6C3D3965}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B4B124A-3F55-4B88-9CF2-88DA016D32E7} = {3FAAB7D2-035E-44B4-A366-05527AB28FE0}
+		{26F67156-C618-47A6-892D-08930FEFA4CC} = {C21FE5B3-6616-49B5-8365-DF53ACAF9F9F}
+		{D62059D2-76C9-4DE7-BC09-F276979A820F} = {CE65B7FB-2B34-4C78-ADEF-81381B811E97}
+		{05BC4940-0224-4E69-8AA8-F1FA6C3D3965} = {4D3453DA-3B35-4B46-AFB8-22437AB0AC96}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BAE5A3F-9A26-47DD-8BC3-3C93E3E8073A}
+	EndGlobalSection
+EndGlobal

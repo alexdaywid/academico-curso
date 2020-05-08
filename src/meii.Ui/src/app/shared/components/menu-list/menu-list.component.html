@@ -1,0 +1,6 @@
+<div class="list-group">
+    <button type="button" *ngFor="let i of itensMenuList" class="list-group-item list-group-item-action list-group-item-purple" routerLink = "{{ i.link }}">
+      <i class="{{ i.icon }}"></i> 
+      {{ i.nome }}
+    </button>
+  </div>

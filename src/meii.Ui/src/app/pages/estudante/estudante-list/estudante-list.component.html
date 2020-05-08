@@ -1,0 +1,58 @@
+
+
+<div class="needs-validation card p-1 mt-1" novalidate="">
+    <div class="row justify-content-md-center">
+        <div class="col-md-12 mb-3">
+          <div class="lh-100">
+            <div class="row">
+              <button class="btn ml-1 ml-3">
+                <span style="color:#4b4b4d;" >
+                  <i class="fas fa-arrow-left fa-w-12 fa-1x" routerLink="/aluno"></i>
+                </span>           
+              </button>
+              <h5 class="mb-1 text-dark mt-1 ml-1">Alunos</h5>
+            </div>
+          </div>
+          <app-btn-create [details]="btnDetailsList"></app-btn-create> 
+         
+          <div class="table-responsive mt-5">
+            <table datatable class="table table-striped table-bordered table-responsive-sm" style="width:100%">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Email</th>
+                  <th>CPF</th>
+                  <!-- <th>CNPJ</th> -->
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let estudante of estudantes">
+                  <td>{{estudante.pessoa.nome}}</td>
+                  <td>{{estudante.pessoa.email}}</td>
+                  <td>{{estudante.pessoa.cpf}}</td>
+                  <!-- <td>{{estudante.pessoa.cnpj}}</td> -->
+                  <td>
+                   
+                    <div class="btn-group mr-2 mb-2">
+                      <!-- <a routerLink="edit/{{estudante.id}}"> -->
+                        <button class="btn btn-sm btn-outline-dark" data-toggle="tooltip" data-placement="top" (click)="editarEstudante()" title="Editar">
+                          <i class="fas fa-edit fa-1x mr-1"></i>
+                        </button>
+                      <!-- </a> -->
+                   
+                    <button class="btn btn-sm btn-outline-dark"  data-toggle="tooltip" data-placement="top" (click)="excluirEstudante(estudante)" title="Excluir">
+                    <i class="fas fa-trash fa-1x mr-1"></i></button>
+                    </div>
+                    <!-- <button class="btn btn-outline-dark btn-sm mr-1" routerLink="/cliente/edit" ><i class="fas fa-edit fa-1x mr-1"></i>Edite</button>
+                    <button class="btn btn-outline-info btn-sm" routerLink="/cliente/edit"><i class="fas fa-trash fa-1x mr-1"></i>Delete</button> -->
+                  </td>
+                </tr>     
+              </tbody>
+            </table>
+            
+        </div>
+        </div>
+    </div>
+  </div>
+  

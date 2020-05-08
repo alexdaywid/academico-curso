@@ -1,0 +1,3 @@
+C:\Users\Alex\source\repos\projetos\src\meii.applicationCore\obj\Debug\netcoreapp3.0\meii.applicationCore.csprojAssemblyReference.cache
+C:\Users\Alex\source\repos\projetos\src\meii.applicationCore\obj\Debug\netcoreapp3.0\meii.applicationCore.AssemblyInfoInputs.cache
+C:\Users\Alex\source\repos\projetos\src\meii.applicationCore\obj\Debug\netcoreapp3.0\meii.applicationCore.AssemblyInfo.cs

@@ -1,0 +1,73 @@
+<app-menu-navbar></app-menu-navbar>
+<!-- Begin Page Content -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 mb-3 mt-5 ">
+      <nav>
+        <div class="nav nav-tabs  justify-content-center" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active nav-tabs-success" id="nav-dashboard-tab" routerLink='/dashboard' (click) = "OnClick('dashboard')" data-toggle="tab" role="tab" aria-controls="nav-dashboard" aria-selected="true">
+            <i class="fas fa-tags"></i>
+            Dashboard
+          </a>
+          <a class="nav-item nav-link nav-tabs-success" id="nav-estudante-tab" (click) = "OnClick('estudante')" data-toggle="tab" role="tab" aria-controls="nav-aluno" aria-selected="true" routerLink='{{linkUserAtual}}'>
+            <i class="fas fa-tags"></i>
+              Area do Aluno
+          </a>
+          <!-- <a class="nav-item nav-link" id="nav-cartao-tab" (click)= "OnClick('cartao')" data-toggle="tab" role="tab" aria-controls="nav-cartao" aria-selected="false">
+            <i class="fas fa-shopping-cart"></i>
+            Financeiro
+          </a> -->
+          <a class="nav-item nav-link" id="nav-empresa-tab" (click)= "OnClick('empresa')" routerLink='/empresa' href="#nav-empresa" data-toggle="tab" role="tab" aria-controls="nav-empresa" aria-selected="false" routerLink='/pagamento'>
+            <i class="fas fa-money-bill"></i>
+           Area Empresa
+          </a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="{{id}}" role="tabpanel" aria-labelledby="label">    
+          <main role="main" class="container">     
+            <div class="my-1 p-2 rounded">
+
+              <div class="row">
+                <div class="col-md-3 order-md-2">
+                    <app-menu-list [itensMenuList] = "itensMenu"></app-menu-list>            
+                </div>
+                   
+                  <div class="col-md-9 order-md-2">
+                    <router-outlet></router-outlet>
+                  </div>
+                                      
+              </div>
+              
+              
+                <small class="d-block text-right mt-3">
+                    <a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Todas as atualizações</font></font></a>
+                </small>
+            </div>      
+        </main>                     
+        </div>
+     
+
+        <!-- <div class="tab-pane fade" id="nav-compras" role="tabpanel" aria-labelledby="nav-compras-tab">
+          <h1>Compras</h1>
+        </div>
+        <div class="tab-pane fade" id="nav-financeiro" role="tabpanel" aria-labelledby="nav-financeiro-tab">
+          <h1>Financeiro</h1>
+        </div>
+        <div class="tab-pane fade" id="nav-relatorios" role="tabpanel" aria-labelledby="nav-relatorio-tab">
+          <h1>Relatorios</h1>
+        </div>
+        <div class="tab-pane fade" id="nav-administracao" role="tabpanel" aria-labelledby="nav-administracao-tab">
+          <h1>Administtracao</h1>
+        </div>  -->
+
+
+      </div>    
+    </div>
+  </div>
+</div>
+
+
+
+
+

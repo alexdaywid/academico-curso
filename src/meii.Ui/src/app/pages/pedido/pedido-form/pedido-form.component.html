@@ -1,0 +1,102 @@
+<app-breadcrumb></app-breadcrumb>
+                 
+<div class="needs-validation card p-1 mt-3" novalidate="">
+    <div class="row justify-content-md-center">
+      <div class="col-md-12 mb-3">
+        <app-btn-edit [details]="btnDetailsForm" (newItemEvent)= "onSubmit($event)"></app-btn-edit>
+      </div>
+      <div class="col-md-12 mb-3 mt-5">
+        <div class="tab-content" id="nav-tabContent">
+        
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+           <form class="form-horizontal" [formGroup]= "pedidoform" >
+            <!-- <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label>Pedido</label>
+                <div class="input-group input-group">
+                    <input type="text" class="form-control" name="codigo"  formControlName="codigo">
+                </div>
+              </div>
+              <div class="col-md-6 mb-2">
+                <label for="validationDefaultUsername">Data Pedido</label>
+                <div class="input-group">
+                  <input type="date"  class="form-control" id="dataGeracao"  name="dataGeracao"  formControlName="dataGeracao">
+                </div>
+              </div>
+            </div> -->
+            
+            <!-- <div class="dropdown-divider"></div> -->
+            
+            <div class="form-row">
+                <div class="col-md-4 mb-2">
+                    <label for="validationDefaultUsername">Curso</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="curso" name="curso"  formControlName="curso">
+                    </div>
+                </div>
+              <div class="col-md-4 mb-2">
+                <label for="validationDefaultUsername">Valor</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="valor" name="valor"  formControlName="valor">
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-2">
+                <label for="exampleFormControlSelect1">Tipo Pagamento</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Cartao de Credito</option>
+                </select>
+            </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-4 mb-2">
+                    <label for="">Nº Cartão de Crédito</label>
+                  <select  formControlName="cartaoCredito" class="form-control" id="cartaoCredito" name="cartaoCredito" (change)="pegarvalor()" >
+                    <option *ngFor="let cartao of cartoes" [ngValue]="cartao.id">{{cartao.numero}}</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 mb-2">
+                  <label for="validationDefaultUsername">Nº Parcela</label>
+                  <div class="input-group">
+                    <input type="number" class="form-control" id="numeroParcela" name="numeroParcela"  (change)="calcularParcela()" formControlName="numeroParcela">
+                  </div>
+                </div>
+                <!-- <div class="col-md-4 mb-2"> -->
+                 
+                  <!-- <label for="exampleFormControlSelect1">Nº Parcela</label>
+                <select class="form-control" id="exampleFormControlSelect1" id="totalParcelas" name="totalParcelas" (change)="calcularParcela('parcela')" formControlName="totalParcelas">
+                  <option *ngFor="let parcela of parcelas" [ngValue] = "parcela" >{{parcela}}</option>
+                  </select> -->
+              <!-- </div> -->
+
+              <div class="col-md-4 mb-2">
+                <label for="validationDefaultUsername">Valor Parcela</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="valorParcela" name="valorParcela" formControlName="valorParcela">
+                </div>
+              </div>
+            
+              <!-- <div class="col-md-4 mb-2">
+                <label for="validationDefaultUsername">Nº Parcelas</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="pagamento" name="pagamento"  formControlName="pagamento">
+                </div>
+              </div> -->
+              <!-- <div class="col-md-4 mb-2">
+                <label for="validationDefaultUsername">Valor Parcela</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="valorParcel" name="valorParcela"  formControlName="valorParcela">
+                </div>
+              </div> -->
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>                                
+    <!-- <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button> -->
+  </div>
+
+

@@ -1,0 +1,43 @@
+
+<div class="needs-validation card p-1 mt-1" novalidate="">
+    <div class="row justify-content-md-center">
+        <div class="col-md-12 mb-3">
+          <!-- <app-breadcrumb></app-breadcrumb> -->
+          <!-- <app-btn-create [details]="btnDetailsList"></app-btn-create>  -->
+          <div class="lh-100">
+            <div class="row">
+              <button class="btn ml-1 ml-3">
+                <span style="color:#4b4b4d;" >
+                  <i class="fas fa-arrow-left fa-w-12 fa-1x" routerLink="/dashboard"></i>
+                </span>           
+              </button>
+              <h5 class="mb-1 text-dark mt-1 ml-1">Meus Cursos</h5>
+            </div>
+          </div>
+         
+          <div class="table-responsive mt-5">
+            <table datatable class="table table-striped table-bordered table-responsive-sm" style="width:100%">
+              <thead>
+                <tr>
+                  <th>Curso</th>
+                  <th>Descricao</th>
+                  <th>Nivel</th>
+                  <th>Valor</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let curso of cursosEstudante">
+                  <td>{{curso.nome}}</td>
+                  <td>{{curso.descricao}}</td>
+                  <td>{{curso.nivel}}</td>
+                  <td>{{curso.valor}}</td>
+                </tr>     
+              </tbody>
+            </table>
+            
+        </div>
+        </div>
+    </div>
+  </div>
+  

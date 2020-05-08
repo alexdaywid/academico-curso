@@ -1,0 +1,115 @@
+<div class="lh-100">
+  <div class="row">
+    <button class="btn ml-1 ml-3">
+      <span style="color:#4b4b4d;" >
+        <i class="fas fa-arrow-left fa-w-12 fa-1x" routerLink="/aluno"></i>
+      </span>           
+    </button>
+    <h5 class="mb-1 text-dark mt-1 ml-1">Aluno</h5>
+  </div>
+</div>
+                 
+<div class="needs-validation card p-1 mt-3" novalidate="">
+    <div class="row justify-content-md-center">
+      <div class="col-md-12 mb-3">
+        <app-btn-edit [details]="btnDetailsForm" (newItemEvent)= "onSubmit($event)"></app-btn-edit>
+      </div>
+      <div class="col-md-12 mb-3 mt-5">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Dados Cadastrais</a>
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Endereços</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contatos</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+        
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+           <form class="form-horizontal" [formGroup] = "estudanteform" >
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label>Nome</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" name="nome" formControlName ="nome">
+                </div> 
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationDefaultUsername">Email</label>
+                <div class="input-group input-group">
+                  <input type="text" class="form-control" name="email"  formControlName="email" placeholder="seu@email.com">
+                </div>
+              </div>
+            </div>
+            
+            <!-- <div class="dropdown-divider"></div> -->
+            
+            <div class="form-row">
+              <div class="col-md-4 mb-2">
+                <label for="validationDefaultUsername">Data Nascimento</label>
+                <div class="input-group">
+                  <input type="date" class="form-control" id="validationDefaultUsername" name="dtNascimento"  formControlName="dtNascimento">
+                </div>
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="validationDefaultUsername">Residencial</label>
+                <div class="input-group">
+                  <div class="input-group-prepend" >
+                    <span class="input-group-text" id="inputGroupPrepend2">
+                      <i class="fas fa-phone fa-1x mr-1"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" id="validationDefaultUsername" name="telResidencial"  formControlName="telResidencial"  aria-describedby="inputGroupPrepend2" required required placeholder="(000) 9999-9999">
+                </div>
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="validationDefaultUsername">Celular</label>
+                <div class="input-group">
+                  <div class="input-group-prepend" >
+                    <span class="input-group-text" id="inputGroupPrepend2">
+                      <i class="fas fa-mobile-alt fa-1x mr-1"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" id="validationDefaultUsername" name="telCelular"  formControlName="telCelular" placeholder="(000) 99999-9999">
+                </div>
+              </div>
+              <!-- <div class="col-md-4 mb-2">
+                <label for="validationDefaultUsername">Tipo de pessoa</label>
+                <select class="custom-select d-block w-100" id="state" onchan required="">
+                  <option value="">Escolha...</option>
+                  <option>Física</option>
+                  <option>Jurídica</option>
+                </select>  
+                </div> -->
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-6 mb-2">
+                <label for="validationDefaultUsername">CPF</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="validationDefaultUsername" name="cpf"  formControlName="cpf"  placeholder="000.000.000-00">
+                </div>
+              </div>
+              <div class="col-md-6 mb-2">
+                <label for="validationDefaultUsername">RG</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="validationDefaultUsername" name="rg"  formControlName="rg" aria-describedby="inputGroupPrepend2" required required>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <h1>Endereços</h1>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <h1>Contatos</h1>
+        </div>
+             
+        
+        </div>
+      </div>
+    </div>                                
+    <!-- <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button> -->
+  </div>
+

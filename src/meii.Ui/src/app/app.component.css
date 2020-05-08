@@ -1,0 +1,29 @@
+.nav-tabs .active {
+    border-top-color: #7952b3;
+    border-top-style: solid;
+    border-top-width: 3px;
+}
+.nav-link.active {
+    color:#7952b3!important;
+}
+.list-group-item-purple {
+    color: #7952b3!important;
+}
+
+a {
+    color: #6c757d!important;
+}
+
+.fa-file-pdf {
+    color: #f13f28;
+}
+
+.fa-file-excel{
+    color: rgb(24, 105, 24);
+}
+
+/* .btn-outline-info:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #17a2b8;
+    background-color: rgba(233, 246, 247, 0.788);
+
+} */

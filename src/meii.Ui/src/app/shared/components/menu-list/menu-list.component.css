@@ -1,0 +1,11 @@
+.list-group-item-purple {
+    color:darkgreen!important;
+}
+
+.list-group-item-action {
+    color:#7952b3!important;
+}
+
+.list-group-item-action:hover {
+    background-color: rgba(111, 66, 193, 0.29)!important;
+}

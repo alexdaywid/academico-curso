@@ -1,0 +1,8 @@
+Roda migracao 
+bd sql server express
+update-database -Context MEContext
+
+
+Angular 
+Angular dentro pacote Ui.meii
+npm install

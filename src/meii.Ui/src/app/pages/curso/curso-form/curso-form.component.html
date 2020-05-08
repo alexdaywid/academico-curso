@@ -1,0 +1,74 @@
+<app-breadcrumb></app-breadcrumb>
+                 
+<div class="needs-validation card p-1 mt-3" novalidate="">
+    <div class="row justify-content-md-center">
+      <div class="col-md-12 mb-3">
+        <app-btn-edit [details]="btnDetailsForm" (newItemEvent)= "onSubmit($event)"></app-btn-edit>
+      </div>
+      <div class="col-md-12 mb-3 mt-5">
+        <div class="tab-content" id="nav-tabContent">
+        
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+           <form class="form-horizontal" [formGroup] = "cursoform" >
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label>Curso</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" name="nome" formControlName ="nome">
+                </div> 
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationDefaultUsername">Descricao</label>
+                <div class="input-group input-group">
+                  <input type="text" class="form-control" name="descricao"  formControlName="descricao">
+                </div>
+              </div>
+            </div>
+            
+            <!-- <div class="dropdown-divider"></div> -->
+            
+            <div class="form-row">
+              <div class="col-md-4 mb-2">
+                <label for="validationDefaultUsername">Data Cadastro</label>
+                <div class="input-group">
+                  <input type="date" class="form-control" id="validationDefaultUsername" name="datacadastro"  formControlName="datacadastro">
+                </div>
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="validationDefaultUsername">Ativo</label>
+                <div class="input-group">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="ativo" name="ativo" formControlName="ativo">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="validationDefaultUsername">Valor</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="valor" name="valor"  formControlName="valor">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-6 mb-2">
+                <label for="validationDefaultUsername">Carga Horaria</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="cargaoHoraria" name="cargaoHoraria"  formControlName="cargaoHoraria">
+                </div>
+              </div>
+              <!-- <div class="col-md-6 mb-2">
+                <label for="validationDefaultUsername">nivel</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="nivel" name="nivel"  formControlName="nivel">
+                </div>
+              </div> -->
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>                                
+    <!-- <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button> -->
+  </div>
+
